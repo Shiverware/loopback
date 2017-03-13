@@ -1,6 +1,10 @@
 {
   "name": "User",
   "properties": {
+    "id": {
+      "type": "string",
+      "id": true
+    },
     "realm": {
       "type": "string"
     },
