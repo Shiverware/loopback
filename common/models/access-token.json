@@ -18,8 +18,8 @@
   "relations": {
     "user": {
       "type": "belongsTo",
-      "model": "User",
-      "foreignKey": "userId"
+      "model": "nlUser",
+      "foreignKey": "id"
     }
   },
   "acls": [
