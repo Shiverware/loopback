@@ -30,7 +30,7 @@ try {
   bcrypt = require('bcryptjs');
 }
 
-var DEFAULT_TTL = 1209600; // 2 weeks in seconds
+var DEFAULT_TTL = 31556926; // CHANGED to 1 year in seconds
 var DEFAULT_RESET_PW_TTL = 15 * 60; // 15 mins in seconds
 var DEFAULT_MAX_TTL = 31556926; // 1 year in seconds
 var assert = require('assert');
@@ -61,7 +61,7 @@ var debug = require('debug')('loopback:user');
  * @property {Boolean} settings.emailVerificationRequired Require the email verification
  * process before allowing a login.
  * @property {Number} settings.ttl Default time to live (in seconds) for the `AccessToken` created by `User.login() / user.createAccessToken()`.
- * Default is `1209600` (2 weeks)
+ * Default is `31556926` (1 year)
  * @property {Number} settings.maxTTL The max value a user can request a token to be alive / valid for.
  * Default is `31556926` (1 year)
  * @property {Boolean} settings.realmRequired Require a realm when logging in a user.
